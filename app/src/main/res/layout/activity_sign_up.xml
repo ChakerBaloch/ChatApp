@@ -56,7 +56,22 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="60dp"
-            android:hint="@string/name"
+            android:hint="@string/firstname"
+            android:background="@drawable/background_input"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@color/primary_text"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:hint="@string/lastname"
             android:background="@drawable/background_input"
             android:imeOptions="actionNext"
             android:importantForAutofill="no"

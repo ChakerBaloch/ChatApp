@@ -7,7 +7,7 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "",
+        "mobilesdk_app_id": "1:8183699997:android:9395bf5848c7198a94c4f4",
         "android_client_info": {
           "package_name": "com.example.chatapp"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "
+          "current_key": "AIzaSyClK4Ji9FQUVNWnmu8h7IW4Zgd3yonBW9Y"
         }
       ],
       "services": {

@@ -106,6 +106,7 @@ public class SignUpActivity extends AppCompatActivity {
         // Create a new user entry with the provided details
         HashMap<String, String> user = new HashMap<>();
         user.put(Constants.KEY_NAME, binding.inputName.getText().toString());
+        user.put(Constants.KEY_LAST_NAME, binding.lastName.getText().toString());
         user.put(Constants.KEY_EMAIL, binding.inputEmail.getText().toString());
         user.put(Constants.KEY_PASSWORD, binding.inputPassword.getText().toString());
         user.put(Constants.KEY_IMAGE, encodeImage);
@@ -119,6 +120,7 @@ public class SignUpActivity extends AppCompatActivity {
                     // Save user session data in preferences
                     preferenceManager.putBoolean(Constants.KEY_IS_SIGNED_IN, true);
                     preferenceManager.putString(Constants.KEY_NAME, binding.inputName.getText().toString());
+                    preferenceManager.putString(Constants.KEY_LAST_NAME, binding.lastName.getText().toString());
                     preferenceManager.putString(Constants.KEY_IMAGE, encodeImage);
 
                     // Navigate to main activity and clear the back stack
@@ -192,7 +194,12 @@ public class SignUpActivity extends AppCompatActivity {
         }
         // Check if name is entered
         if (binding.inputName.getText().toString().trim().isEmpty()) {
-            showToast("Please Enter your Name");
+            showToast("Please Enter your First Name");
+            return false;
+        }
+        // Check if name is entered
+        if (binding.lastName.getText().toString().trim().isEmpty()) {
+            showToast("Please Enter your Last Name");
             return false;
         }
         // Validate email format

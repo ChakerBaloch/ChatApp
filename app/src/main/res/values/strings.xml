@@ -11,4 +11,8 @@
     <string name="name">Name</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="sign_up">Sign Up</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="Chat">Chat</string>
+    <string name="type_a_message">Type a message</string>
 </resources>

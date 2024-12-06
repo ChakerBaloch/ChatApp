@@ -1,3 +1,6 @@
+/**
+ * The SignInActivity class handles the sign-in process for users.
+ */
 package com.example.chatapp.activities;
 
 import android.content.Intent;
@@ -17,14 +20,16 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
 
-/**
- * The SignInActivity class handles the sign-in process for users.
- */
 public class SignInActivity extends AppCompatActivity {
 
-    // Binding for accessing UI elements in the activity_sign_in layout
+    /**
+     * Binding for accessing UI elements in the activity_sign_in layout.
+     */
     private ActivitySignInBinding binding;
-    // Manager for storing user preferences
+
+    /**
+     * Manager for storing user preferences.
+     */
     private PreferenceManager preferenceManager;
 
     /**
